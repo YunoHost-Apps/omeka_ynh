@@ -30,6 +30,7 @@ ynh_config_add_nginx
 ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template="database.ini.default" --destination="$install_dir/config/database.ini"
+ynh_config_add --template="local.config.php" --destination="$install_dir/config/local.config.php"
 
 #=================================================
 # TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION
